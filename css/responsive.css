@@ -96,6 +96,24 @@
         top: 8px;
     }
     
+    /* コンテンツの中央寄せ強化 */
+    #hero, section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .hero-content, .hero-title, .hero-subtitle, .hero-description, .hero-cta,
+    .typing-text, .intro-greeting {
+        width: 100%;
+        text-align: center !important;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
     :root {
         --fs-6xl: 3rem;
         --fs-5xl: 2.5rem;
@@ -138,8 +156,9 @@
         gap: var(--spacing-md);
     }
     
-    .skills-grid {
-        grid-template-columns: 1fr;
+    /* PC表示ではスキルセクションを横にする */
+    .skill-card {
+        flex: 1 1 100%;
     }
     
     .works-grid {
@@ -194,6 +213,26 @@
         width: 4px;
         height: 4px;
         top: 7px;
+    }
+    
+    /* ボタンとスクロールインジケーターの中央寄せ */
+    .btn {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-cta {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .scroll-indicator {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        text-align: center;
     }
     
     :root {

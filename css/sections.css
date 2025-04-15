@@ -1,10 +1,23 @@
+/* Media Query for Skills Grid */
+@media (min-width: 992px) {
+    .skill-card {
+        flex: 1 1 calc(50% - var(--spacing-lg));
+    }
+}
+
+@media (min-width: 1200px) {
+    .skill-card {
+        flex: 1 1 calc(50% - var(--spacing-lg));
+        min-width: 250px;
+    }
+}
+
 /* Hero Section Styles */
 #hero {
     position: relative;
     overflow: visible;
     padding-top: 120px;
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
+    width: 100%;
 }
 
 .hero-content {
@@ -13,10 +26,19 @@
     text-align: center;
     position: relative;
     z-index: 2;
+    padding: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-intro {
     margin-bottom: var(--spacing-md);
+    width: 100%;
+    text-align: center;
 }
 
 .intro-greeting {
@@ -30,6 +52,8 @@
     margin-bottom: var(--spacing-lg);
     font-size: clamp(2.5rem, 6vw, 4.5rem);
     line-height: 1.1;
+    width: 100%;
+    text-align: center;
 }
 
 .glitch-text {
@@ -128,6 +152,8 @@
     font-size: var(--fs-xl);
     margin-bottom: var(--spacing-xl);
     color: var(--text-light-muted);
+    width: 100%;
+    text-align: center;
 }
 
 .typing-text {
@@ -153,6 +179,8 @@
     justify-content: center;
     gap: var(--spacing-md);
     margin-top: var(--spacing-xl);
+    width: 100%;
+    text-align: center;
 }
 
 .scroll-indicator {
@@ -241,11 +269,10 @@
     top: 0;
     left: 0;
     right: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     overflow: visible;
     z-index: 1;
-    margin-left: calc(-50vw + 50%);
 }
 
 .shape {
@@ -468,10 +495,12 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-3xl);
+    width: 100%;
 }
 
 .skills-category {
     margin-bottom: var(--spacing-xl);
+    width: 100%;
 }
 
 .category-title {
@@ -494,9 +523,10 @@
 }
 
 .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     gap: var(--spacing-lg);
+    width: 100%;
 }
 
 .skill-card {
@@ -509,6 +539,9 @@
     transition: transform var(--transition-normal);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.05);
+    flex: 1 1 calc(50% - var(--spacing-lg));
+    min-width: 250px;
+    max-width: 100%;
 }
 
 .skill-card:hover {

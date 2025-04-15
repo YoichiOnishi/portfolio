@@ -131,6 +131,7 @@
     border: none;
     outline: none;
     font-size: var(--fs-base);
+    margin: 0 auto;
 }
 
 .btn i {
