@@ -74,6 +74,28 @@
 
 /* Mobile Devices (576px to 767px) */
 @media (max-width: 767px) {
+    /* スクロールダウン表示の調整 */
+    .scroll-indicator {
+        bottom: var(--spacing-lg);
+        width: 80px;
+    }
+    
+    .scroll-indicator p {
+        font-size: 12px;
+        margin-bottom: 0;
+    }
+    
+    .mouse {
+        width: 22px;
+        height: 35px;
+    }
+    
+    .wheel {
+        width: 5px;
+        height: 5px;
+        top: 8px;
+    }
+    
     :root {
         --fs-6xl: 3rem;
         --fs-5xl: 2.5rem;
@@ -152,6 +174,28 @@
 
 /* Small Mobile Devices (Up to 575px) */
 @media (max-width: 575px) {
+    /* スクロールダウン表示の調整 */
+    .scroll-indicator {
+        bottom: var(--spacing-md);
+        width: 60px;
+    }
+    
+    .scroll-indicator p {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+    
+    .mouse {
+        width: 20px;
+        height: 30px;
+    }
+    
+    .wheel {
+        width: 4px;
+        height: 4px;
+        top: 7px;
+    }
+    
     :root {
         --fs-6xl: 2.5rem;
         --fs-5xl: 2.25rem;
