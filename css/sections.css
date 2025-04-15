@@ -762,6 +762,7 @@
     display: flex;
     flex-direction: column;
     gap: var(--spacing-3xl);
+    margin-bottom: var(--spacing-3xl);
 }
 
 .featured-work {
@@ -769,6 +770,7 @@
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-xl);
     align-items: center;
+    margin-bottom: var(--spacing-3xl);
 }
 
 .featured-work:nth-child(even) {
@@ -825,9 +827,12 @@
 
 .other-works-title {
     margin-bottom: var(--spacing-xl);
+    margin-top: var(--spacing-3xl);
     text-align: center;
     font-size: var(--fs-2xl);
     color: var(--text-light);
+    padding-top: var(--spacing-xl);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .works-grid {

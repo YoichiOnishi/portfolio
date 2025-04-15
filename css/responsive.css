@@ -1,5 +1,21 @@
 /* Responsive Styles */
 
+/* フィーチャードワークのマージンを調整 */
+@media (max-width: 767px) {
+    .featured-works {
+        margin-bottom: var(--spacing-2xl);
+    }
+    
+    .featured-work {
+        margin-bottom: var(--spacing-2xl);
+    }
+
+    .other-works-title {
+        padding-top: var(--spacing-xl);
+        margin-top: var(--spacing-xl);
+    }
+}
+
 /* Large Desktops (1200px and above) */
 @media (min-width: 1200px) {
     .container {
