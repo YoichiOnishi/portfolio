@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <meta name="description" content="大西陽一 - TBSテレビのAIエンジニア＆システム開発者。AIナレーションシステム(音六AI)開発、基幹システム開発のプロジェクトマネジメント経験。民放連賞技術部門優秀賞受賞。最新AI技術の社会実装に注力。">
+    <meta property="og:title" content="大西陽一 | Yoichi Onishi | AIエンジニア＆システム開発者 ポートフォリオ">
+    <meta property="og:description" content="TBSテレビでのプロジェクト実績、AIナレーションシステム開発、受賞歴をご覧ください。">
+    <meta property="og:image" content="https://yoichionishi.github.io/YoichiOnishi/images/profile/avatar.jpg">
+    <meta property="og:url" content="https://yoichionishi.github.io/YoichiOnishi/">
+    <meta property="og:type" content="website">
+    <meta name="google-site-verification" content="tNQmTRfOtTRbEa7OLTROU7lJ_9CDFQKkXZd37BeaXKI" />
+    <meta name="keywords" content="大西陽一, Yoichi Onishi, AIエンジニア, システム開発, プロジェクトマネジメント, TBS, AI開発, 音六AI">
+    <meta name="author" content="Yoichi Onishi">
+    <meta name="robots" content="index, follow">
+    
+    <title>Yoichi Onishi | 大西陽一 | AIエンジニア＆システム開発者 ポートフォリオ</title>
+    
+    <!-- ファビコン -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a1a'/><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23ff3366'/><stop offset='100%' stop-color='%2300ccff'/></linearGradient></defs><g transform='translate(50,50)' text-anchor='middle' dominant-baseline='central'><text font-family='Arial, sans-serif' font-weight='bold' font-size='55' fill='url(%23grad)'>YO</text></g></svg>">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- CSS ファイルの読み込み -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- JSON-LD for structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "大西陽一",
+      "alternateName": "Yoichi Onishi",
+      "jobTitle": "AIエンジニア＆システム開発者",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Tokyo Broadcasting System"
+      },
+      "email": "onishi.yoichi@tbs.co.jp",
+      "url": "https://yoichionishi.github.io/YoichiOnishi/",
+      "image": "https://yoichionishi.github.io/YoichiOnishi/images/profile/avatar.jpg",
+      "description": "TBSテレビのAIエンジニア＆システム開発者。AIナレーションシステム(音六AI)開発、基幹システム開発のプロジェクトマネジメント経験。",
+      "knowsAbout": ["AI", "Project Management", "System Development", "Text-To-Speech"]
+    }
+    </script>
+</head>
+<body>
+    <!-- グローバルローダー -->
+    <div class="loader-container">
+        <div class="loader">
+            <svg viewBox="0 0 80 80">
+                <circle class="loader-circle" cx="40" cy="40" r="32"></circle>
+            </svg>
+            <div class="loader-text">Loading</div>
+        </div>
+    </div>
+
+    <!-- パーティクル背景 -->
+    <div id="particles-js"></div>
+    
+    <!-- ナビゲーションメニュー -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="logo">
+                <a href="#hero" data-scroll>YO</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" data-scroll>About</a></li>
+                <li><a href="#skills" data-scroll>Skills</a></li>
+                <li><a href="#achievements" data-scroll>Achievements</a></li>
+                <li><a href="#works" data-scroll>Works</a></li>
+                <li><a href="#contact" data-scroll>Contact</a></li>
+            </ul>
+            <div class="theme-toggle">
+                <i class="fas fa-moon"></i>
+            </div>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- メインコンテンツ -->
+    <main class="content-wrapper">
+        <!-- ヒーローセクション -->
+        <section id="hero" class="section-full">
+            <div class="hero-content">
+                <div class="hero-intro fade-in">
+                    <span class="intro-greeting">Hi, I'm</span>
+                </div>
+                <h1 class="hero-title fade-in">
+                    <span class="glitch-text" data-text="Yoichi Onishi">Yoichi Onishi</span>
+                    <span class="hero-subtitle">大西 陽一</span>
+                </h1>
+                <p class="hero-description slide-up">
+                    <span class="typing-text"></span><span class="cursor">|</span>
+                </p>
+                <div class="hero-cta fade-in">
+                    <a href="#about" class="btn btn-primary" data-scroll>詳しく見る</a>
+                    <a href="#contact" class="btn btn-outline" data-scroll>お問い合わせ</a>
+                </div>
+            </div>
+            <div class="scroll-indicator fade-in">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <p>Scroll Down</p>
+            </div>
+            <div class="hero-bg-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </section>
+
+        <!-- プロフィールセクション -->
+        <section id="about" class="section">
+            <div class="section-header">
+                <h2 class="section-title reveal-element">About Me</h2>
+                <div class="section-subtitle reveal-element">経歴と自己紹介</div>
+            </div>
+            
+            <div class="profile-container">
+                <div class="profile-column reveal-element" data-delay="0.1">
+                    <div class="profile-image-wrapper">
+                        <div class="profile-image" data-tilt data-tilt-max="10" data-tilt-speed="400" data-tilt-perspective="500">
+                            <img src="images/profile/avatar.jpg" alt="Yoichi Onishi">
+                            <div class="profile-image-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="profile-info">
+                        <h3>大西 陽一 | Yoichi Onishi</h3>
+                        <p class="profile-role">AI Engineer | System Developer</p>
+                        <div class="contact-info">
+                            <p><i class="fas fa-envelope"></i> onishi.yoichi@tbs.co.jp</p>
+                            <p><i class="fas fa-building"></i> Tokyo Broadcasting System</p>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/YoichiOnishi" target="_blank" aria-label="GitHub" class="social-icon"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/in/yoichi-onishi/" target="_blank" aria-label="LinkedIn" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                            <a href="https://twitter.com/" target="_blank" aria-label="Twitter" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="profile-column profile-content reveal-element" data-delay="0.2">
+                    <div class="profile-bio">
+                        <h3>自己紹介</h3>
+                        <p>TBSテレビでAIエンジニア＆システム開発者として活動。AIナレーションシステム「音六AI」の開発やプロジェクトマネジメントを経験し、2023年には顔認識システムの開発に従事し民放連賞技術部門優秀賞を受賞。最新のAI技術を活用した社会実装に注力。</p>
+                    </div>
+                    
+                    <div class="timeline">
+                        <div class="timeline-header">
+                            <h3>職歴</h3>
+                        </div>
+                        <div class="timeline-items">
+                            <div class="timeline-item reveal-element" data-delay="0.1">
+                                <div class="timeline-date">2023年 - 現在</div>
+                                <div class="timeline-content">
+                                    <h3>TBSグロウディア出向 - 現職</h3>
+                                    <p>継続してシステム開発に従事しつつ、複数プロジェクトでPMを経験。R&Dにも力を入れている。</p>
+                                    <p>基幹システム開発(営業放送システム、報道支援システムなど)、Text-To-Speechを応用したAIナレーションシステム、最新AI技術の社会実装に注力。</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item reveal-element" data-delay="0.2">
+                                <div class="timeline-date">2022年</div>
+                                <div class="timeline-content">
+                                    <h3>TBSテレビ入社</h3>
+                                    <p>システム開発PMとして従事。プログラミングからプロジェクトマネジメントまで幅広く経験。</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item reveal-element" data-delay="0.3">
+                                <div class="timeline-date">- 2022年</div>
+                                <div class="timeline-content">
+                                    <h3>学生時代</h3>
+                                    <p>バイオメカニクス分野への機械学習の応用に関する研究で大学院修士課程を修了。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- スキルセクション -->
+        <section id="skills" class="section section-alt">
+            <div class="section-header">
+                <h2 class="section-title reveal-element">Skills</h2>
+                <div class="section-subtitle reveal-element">専門技術と能力</div>
+            </div>
+            
+            <div class="skills-container">
+                <div class="skills-category reveal-element" data-delay="0.1">
+                    <h3 class="category-title">System Development</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-percentage="95">
+                            <div class="skill-icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Project Management</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                                <div class="skill-percentage">95%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="90">
+                            <div class="skill-icon">
+                                <i class="fas fa-flask"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>R&D</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                <div class="skill-percentage">90%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="90">
+                            <div class="skill-icon">
+                                <i class="fas fa-brain"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>AI</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                <div class="skill-percentage">90%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="80">
+                            <div class="skill-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>System Integration</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <div class="skill-percentage">80%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category reveal-element" data-delay="0.2">
+                    <h3 class="category-title">Programming</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-percentage="90">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Python</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                                <div class="skill-percentage">90%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="80">
+                            <div class="skill-icon">
+                                <i class="fab fa-js"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Javascript</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <div class="skill-percentage">80%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="80">
+                            <div class="skill-icon">
+                                <i class="fas fa-calculator"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>MATLAB</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                                <div class="skill-percentage">80%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="50">
+                            <div class="skill-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>C</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 50%"></div>
+                                </div>
+                                <div class="skill-percentage">50%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-category reveal-element" data-delay="0.3">
+                    <h3 class="category-title">Language</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-percentage="99">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Japanese</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 99%"></div>
+                                </div>
+                                <div class="skill-percentage">99%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="60">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>English</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 60%"></div>
+                                </div>
+                                <div class="skill-percentage">60%</div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-card" data-percentage="20">
+                            <div class="skill-icon">
+                                <i class="fas fa-language"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4>Chinese</h4>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 20%"></div>
+                                </div>
+                                <div class="skill-percentage">20%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 実績セクション -->
+        <section id="achievements" class="section">
+            <div class="section-header">
+                <h2 class="section-title reveal-element">Achievements</h2>
+                <div class="section-subtitle reveal-element">受賞歴・メディア掲載</div>
+            </div>
+            
+            <div class="achievements-container">
+                <div class="achievement-tabs">
+                    <button class="tab-btn active" data-tab="awards">受賞歴</button>
+                    <button class="tab-btn" data-tab="publications">掲載歴</button>
+                    <button class="tab-btn" data-tab="appearances">出演歴</button>
+                </div>
+                
+                <div class="tab-content-container">
+                    <div id="awards" class="tab-content active">
+                        <div class="award-card reveal-element" data-delay="0.1">
+                            <div class="award-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <div class="award-details">
+                                <h3>2023 民放連賞技術部門 優秀賞</h3>
+                                <p>放送映像メタ付与ＡＩプラットフォームおよび活用システムの開発により受賞</p>
+                            </div>
+                        </div>
+                        <div class="award-card reveal-element" data-delay="0.2">
+                            <div class="award-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="award-details">
+                                <h3>2023 JNN技術賞特別賞</h3>
+                                <p>放送映像メタ付与ＡＩプラットフォームおよび活用システムの開発により受賞</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="publications" class="tab-content">
+                        <div class="publication-list">
+                            <div class="publication-item reveal-element" data-delay="0.1">
+                                <div class="publication-date">2025年2月</div>
+                                <div class="publication-content">
+                                    <h3>Screens：AIナレーションの進化が、映像制作の未来を変える</h3>
+                                    <a href="https://www.screens-lab.jp/article/30408" target="_blank" rel="noopener noreferrer">https://www.screens-lab.jp/article/30408</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.2">
+                                <div class="publication-date">2025年2月</div>
+                                <div class="publication-content">
+                                    <h3>TBS INNOVATION LAND：鬼才×TBSテレビ「アフター６テックナイト」</h3>
+                                    <a href="https://innovation.tbs.co.jp/neo_report/883/?landx" target="_blank" rel="noopener noreferrer">https://innovation.tbs.co.jp/neo_report/883/?landx</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.3">
+                                <div class="publication-date">2024年10月</div>
+                                <div class="publication-content">
+                                    <h3>TBS RECRUIT：社員紹介</h3>
+                                    <a href="https://www.tbs.co.jp/job/people/tech21.html" target="_blank" rel="noopener noreferrer">https://www.tbs.co.jp/job/people/tech21.html</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.4">
+                                <div class="publication-date">2024年10月</div>
+                                <div class="publication-content">
+                                    <h3>TBSレビュー「特集「音声システム『音六AI』を検証」」</h3>
+                                    <a href="https://www.tbs.co.jp/TBS-review/archive/202410131/" target="_blank" rel="noopener noreferrer">https://www.tbs.co.jp/TBS-review/archive/202410131/</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.5">
+                                <div class="publication-date">2024年7月</div>
+                                <div class="publication-content">
+                                    <h3>Screens：TBSの部署横断チーム、SXSW出展の狙いと手応え</h3>
+                                    <a href="https://www.screens-lab.jp/article/29811" target="_blank" rel="noopener noreferrer">https://www.screens-lab.jp/article/29811</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.6">
+                                <div class="publication-date">2024年5月</div>
+                                <div class="publication-content">
+                                    <h3>TBS INNOVATION LAND：リモートVJや『SASUKE』エリアのバーチャル体験も！</h3>
+                                    <a href="https://innovation.tbs.co.jp/neo_interview/726/" target="_blank" rel="noopener noreferrer">https://innovation.tbs.co.jp/neo_interview/726/</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.7">
+                                <div class="publication-date">2024年3月</div>
+                                <div class="publication-content">
+                                    <h3>TBSテレビ Nスタ：【SXSW】AIが作詞作曲や"仮想手術"</h3>
+                                    <a href="https://newsdig.tbs.co.jp/articles/-/1049599" target="_blank" rel="noopener noreferrer">https://newsdig.tbs.co.jp/articles/-/1049599</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.8">
+                                <div class="publication-date">2024年3月</div>
+                                <div class="publication-content">
+                                    <h3>JNNニュース：表情を持つロボットや写真からAIが作曲のサービスも…</h3>
+                                    <a href="https://newsdig.tbs.co.jp/articles/-/1048423" target="_blank" rel="noopener noreferrer">https://newsdig.tbs.co.jp/articles/-/1048423</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="0.9">
+                                <div class="publication-date">2023年10月</div>
+                                <div class="publication-content">
+                                    <h3>TBS GLOWDIA：FOCUS 新しい仲間とブレイクスルーを起こしたい！</h3>
+                                    <a href="https://www.tbsglowdia.co.jp/product/27274" target="_blank" rel="noopener noreferrer">https://www.tbsglowdia.co.jp/product/27274</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="1.0">
+                                <div class="publication-date">2023年9月</div>
+                                <div class="publication-content">
+                                    <h3>業界ch：民放連賞優秀賞「メディアブランチ」と「メタ付与AIプラットフォーム」がダブル受賞！</h3>
+                                    <a href="https://b2b-ch.infomart.co.jp/news/detail.page?IMNEWS1=4292417" target="_blank" rel="noopener noreferrer">https://b2b-ch.infomart.co.jp/news/detail.page?IMNEWS1=4292417</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="1.1">
+                                <div class="publication-date">2023年9月</div>
+                                <div class="publication-content">
+                                    <h3>日本民間放送連盟：2023年日本民間放送連盟賞</h3>
+                                    <a href="https://j-ba.or.jp/award2023/" target="_blank" rel="noopener noreferrer">https://j-ba.or.jp/award2023/</a>
+                                </div>
+                            </div>
+                            <div class="publication-item reveal-element" data-delay="1.2">
+                                <div class="publication-date">2023年5月</div>
+                                <div class="publication-content">
+                                    <h3>TBS INNOVATION LAND：TBSがSXSWに初出展！文字起こしエディタ「もじこ」が世界デビュー</h3>
+                                    <a href="https://innovation.tbs.co.jp/neo_interview/439/" target="_blank" rel="noopener noreferrer">https://innovation.tbs.co.jp/neo_interview/439/</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="appearances" class="tab-content">
+                        <div class="appearance-card reveal-element" data-delay="0.1">
+                            <div class="appearance-icon">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <div class="appearance-details">
+                                <h3>TBSテレビ「AIナレーションの可能性&CES2025レポート」</h3>
+                                <p>鬼才×TBSテレビ「アフター6テックナイト」</p>
+                                <div class="appearance-date">2025年1月23日</div>
+                            </div>
+                        </div>
+                        <div class="appearance-card reveal-element" data-delay="0.2">
+                            <div class="appearance-icon">
+                                <i class="fas fa-tv"></i>
+                            </div>
+                            <div class="appearance-details">
+                                <h3>TBSレビュー「特集「音声システム『音六AI』を検証」」</h3>
+                                <div class="appearance-date">2024年10月13日</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Works セクション -->
+        <section id="works" class="section section-alt">
+            <div class="section-header">
+                <h2 class="section-title reveal-element">Works</h2>
+                <div class="section-subtitle reveal-element">開発実績</div>
+            </div>
+            
+            <div class="works-container">
+                <div class="featured-works">
+                    <div class="featured-work reveal-element" data-delay="0.1">
+                        <div class="work-media">
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/ZtEUwuLs0-4" frameborder="0" allowfullscreen title="AIナレーションシステム「音六AI」開発"></iframe>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <div class="work-tags">
+                                <span class="tag">AI</span>
+                                <span class="tag">音声合成</span>
+                                <span class="tag">放送技術</span>
+                            </div>
+                            <h3>AIナレーションシステム「音六AI」開発</h3>
+                            <p>Text-To-Speechを応用した放送用AIナレーションシステム。人間の声に近い自然な発声を実現し、放送制作現場の効率化に貢献。</p>
+                        </div>
+                    </div>
+                    
+                    <div class="featured-work reveal-element" data-delay="0.2">
+                        <div class="work-media">
+                            <div class="video-wrapper">
+                                <iframe src="https://www.youtube.com/embed/-_9jUE4UiGE" frameborder="0" allowfullscreen title="CES2025レポート"></iframe>
+                            </div>
+                        </div>
+                        <div class="work-info">
+                            <div class="work-tags">
+                                <span class="tag">国際展示</span>
+                                <span class="tag">技術革新</span>
+                                <span class="tag">SXSW</span>
+                            </div>
+                            <h3>CESに見る技術革新</h3>
+                            <p>CES2025展示から音六AIへのインスピレーション、技術革新、今後の展開についてディスカッションした。</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="other-works">
+                    <h3 class="other-works-title reveal-element">Other Projects</h3>
+                    <div class="works-grid">
+                        <div class="work-card reveal-element" data-delay="0.1" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                            <div class="work-card-inner">
+                                <div class="work-icon">
+                                    <i class="fas fa-broadcast-tower"></i>
+                                </div>
+                                <h4>営業放送システム</h4>
+                                <p>放送局の基幹システムとして、広告管理と番組編成を最適化</p>
+                                <div class="work-card-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card reveal-element" data-delay="0.2" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                            <div class="work-card-inner">
+                                <div class="work-icon">
+                                    <i class="fas fa-newspaper"></i>
+                                </div>
+                                <h4>報道支援システム</h4>
+                                <p>ニュース制作を効率化する次世代報道支援基盤</p>
+                                <div class="work-card-overlay"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="work-card reveal-element" data-delay="0.3" data-tilt data-tilt-max="10" data-tilt-speed="400">
+                            <div class="work-card-inner">
+                                <div class="work-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <h4>AI研究開発</h4>
+                                <p>最新AI技術の放送分野への応用と社会実装</p>
+                                <div class="work-card-overlay"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- お問い合わせセクション -->
+        <section id="contact" class="section">
+            <div class="section-header">
+                <h2 class="section-title reveal-element">Contact</h2>
+                <div class="section-subtitle reveal-element">お問い合わせ</div>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-details reveal-element" data-delay="0.1">
+                    <div class="contact-info-card">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Email</h3>
+                                <p>onishi.yoichi@tbs.co.jp</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Company</h3>
+                                <p>Tokyo Broadcasting System</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h3>Location</h3>
+                                <p>Tokyo, Japan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social-container reveal-element" data-delay="0.2">
+                    <h3>Social Media</h3>
+                    <div class="social-links-large">
+                        <a href="https://github.com/YoichiOnishi" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon-large">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/yoichi-onishi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon-large">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter" class="social-icon-large">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- <div class="contact-form-container reveal-element" data-delay="0.3">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name">お名前</label>
+                            <input type="text" id="name" name="name" placeholder="お名前を入力" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">メールアドレス</label>
+                            <input type="email" id="email" name="email" placeholder="メールアドレスを入力" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">件名</label>
+                            <input type="text" id="subject" name="subject" placeholder="件名を入力">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">メッセージ</label>
+                            <textarea id="message" name="message" placeholder="メッセージを入力" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            <span class="btn-text">送信する</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div> -->
+            </div>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h2>YO</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-nav">
+                    <a href="#hero" data-scroll>Home</a>
+                    <a href="#about" data-scroll>About</a>
+                    <a href="#skills" data-scroll>Skills</a>
+                    <a href="#achievements" data-scroll>Achievements</a>
+                    <a href="#works" data-scroll>Works</a>
+                    <a href="#contact" data-scroll>Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/YoichiOnishi" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yoichi-onishi/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 Yoichi Onishi. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- トップに戻るボタン -->
+    <button id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- カーソルフォロワー -->
+    <div class="cursor-follower">
+        <div class="cursor-dot"></div>
+    </div>
+
+    <!-- JavaScript ライブラリ -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    
+    <!-- JavaScript ファイルの読み込み -->
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/particles-config.js"></script>
+    <script src="js/cursor.js"></script>
+</body>
+</html>

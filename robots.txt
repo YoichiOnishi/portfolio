@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Sitemap: https://yoichionishi.github.io/YoichiOnishi/sitemap.xml
+
+# Optimize crawling rate
+Crawl-delay: 10

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>大西陽一ポートフォリオ - 更新内容</title>
+    <!-- ファビコン -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231a1a1a'/><defs><linearGradient id='grad' x1='0%' y1='0%' x2='100%' y2='100%'><stop offset='0%' stop-color='%23ff3366'/><stop offset='100%' stop-color='%2300ccff'/></linearGradient></defs><g transform='translate(50,50)' text-anchor='middle' dominant-baseline='central'><text font-family='Arial, sans-serif' font-weight='bold' font-size='55' fill='url(%23grad)'>YO</text></g></svg>">
+    <link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans JP', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        h1 {
+            color: #6366f1;
+            border-bottom: 2px solid #6366f1;
+            padding-bottom: 0.5rem;
+        }
+        
+        h2 {
+            color: #4f46e5;
+            margin-top: 2rem;
+        }
+        
+        .feature {
+            background: #f7f7ff;
+            border-left: 4px solid #6366f1;
+            padding: 1rem 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 4px 4px 0;
+        }
+        
+        .feature h3 {
+            margin-top: 0;
+            color: #4f46e5;
+        }
+        
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .comparison h3 {
+            grid-column: span 2;
+            margin-bottom: 0.5rem;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 0.5rem;
+        }
+        
+        .old, .new {
+            background: #f8f8f8;
+            padding: 1rem;
+            border-radius: 4px;
+        }
+        
+        .old h4, .new h4 {
+            margin-top: 0;
+        }
+        
+        .old {
+            border-left: 3px solid #888;
+        }
+        
+        .new {
+            border-left: 3px solid #6366f1;
+        }
+        
+        code {
+            background: #eee;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: monospace;
+        }
+        
+        footer {
+            margin-top: 3rem;
+            padding-top: 1rem;
+            border-top: 1px solid #ddd;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #666;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+            
+            .comparison h3 {
+                grid-column: span 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>大西陽一ポートフォリオサイト - 更新内容</h1>
+    
+    <p>このドキュメントでは、大西陽一氏のポートフォリオサイトに加えられた改良点と新機能について説明します。</p>
+    
+    <h2>主な改良点</h2>
+    
+    <div class="feature">
+        <h3>モダンなデザインへの刷新</h3>
+        <p>最新のWebデザイントレンドを取り入れ、よりモダンで洗練されたビジュアルに刷新しました。カラーパレットを見直し、余白や配置のバランスを最適化しています。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>レスポンシブデザインの強化</h3>
+        <p>モバイル、タブレット、デスクトップの各デバイスでの表示を最適化し、どのデバイスからでも快適に閲覧できるようにしました。CSSグリッドやフレックスボックスを活用して、コンテンツのレイアウトが画面サイズに応じて自然に調整されます。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>パフォーマンスの最適化</h3>
+        <p>コードを最適化し、不要な依存関係を削減することでページの読み込み速度を向上させました。また、遅延読み込みやリソースの最適化などのテクニックを導入しています。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>アクセシビリティの向上</h3>
+        <p>WAI-ARIAを適切に使用し、キーボードナビゲーションをサポートするなど、アクセシビリティを向上させました。色のコントラスト比にも配慮しています。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>ダークモードのサポート</h3>
+        <p>ユーザーの好みや環境に応じてライトモードとダークモードを切り替えられる機能を追加しました。システムの設定に基づいて自動的に適切なモードが選択されます。</p>
+    </div>
+    
+    <h2>新機能</h2>
+    
+    <div class="feature">
+        <h3>インタラクティブなスキル表示</h3>
+        <p>スキルセクションを刷新し、視覚的に明確なスキルレベルの表示とインタラクティブな要素を追加しました。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>タブベースの実績表示</h3>
+        <p>受賞歴、掲載歴、出演歴をタブで切り替えて表示できるようにし、情報をより整理して提供できるようになりました。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>アニメーションとトランジション</h3>
+        <p>スクロール連動アニメーションやスムーズなトランジションを追加し、ユーザーエクスペリエンスを向上させました。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>カスタムカーソルエフェクト</h3>
+        <p>デスクトップ環境での閲覧時、カスタムカーソルエフェクトによってサイトのインタラクティブ性を高めています。</p>
+    </div>
+    
+    <div class="feature">
+        <h3>コンタクトフォームの導入</h3>
+        <p>お問い合わせセクションにフォームを追加し、訪問者がより簡単に連絡を取れるようにしました。</p>
+    </div>
+    
+    <h2>コード構成の改善</h2>
+    
+    <div class="comparison">
+        <h3>ファイル構成</h3>
+        <div class="old">
+            <h4>旧バージョン</h4>
+            <ul>
+                <li>個別のCSSファイル (profile.css, skills.css など)</li>
+                <li>すべての機能が main.js に集中</li>
+            </ul>
+        </div>
+        <div class="new">
+            <h4>新バージョン</h4>
+            <ul>
+                <li>目的別にまとめたCSS (components.css, sections.css など)</li>
+                <li>機能別に分割されたJavaScript</li>
+                <li>より明確な名前付けと構造化</li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="comparison">
+        <h3>CSS変数の活用</h3>
+        <div class="old">
+            <h4>旧バージョン</h4>
+            <pre><code>background: linear-gradient(45deg, #ff3366, #00ccff);</code></pre>
+            <pre><code>font-size: 2.5em;</code></pre>
+        </div>
+        <div class="new">
+            <h4>新バージョン</h4>
+            <pre><code>background: linear-gradient(45deg, var(--primary), var(--secondary));</code></pre>
+            <pre><code>font-size: var(--fs-4xl);</code></pre>
+        </div>
+    </div>
+    
+    <div class="comparison">
+        <h3>レスポンシブデザイン</h3>
+        <div class="old">
+            <h4>旧バージョン</h4>
+            <p>ブレークポイントごとに個別のクラスを使用</p>
+        </div>
+        <div class="new">
+            <h4>新バージョン</h4>
+            <p>CSSグリッドとフレックスボックスを活用した自動レイアウト調整</p>
+            <pre><code>display: grid;
+grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));</code></pre>
+        </div>
+    </div>
+    
+    <h2>導入ガイド</h2>
+    
+    <p>新バージョンのサイトを使用するには、以下の手順に従ってください:</p>
+    
+    <ol>
+        <li>すべてのファイルを実際のホスティング環境にアップロードします。</li>
+        <li>元のサイトから以下のファイルをコピーします:
+            <ul>
+                <li><code>images/profile/avatar.jpg</code> - プロフィール写真</li>
+                <li><code>images/favicon/favicon.ico</code> - ファビコン</li>
+                <li><code>images/favicon/apple-touch-icon.png</code> - Appleデバイス用アイコン</li>
+            </ul>
+        </li>
+        <li>必要に応じて <code>index.html</code> の メタデータ（タイトル、説明など）を更新します。</li>
+    </ol>
+    
+    <footer>
+        <p>© 2025 大西陽一ポートフォリオサイト更新プロジェクト</p>
+    </footer>
+</body>
+</html>
