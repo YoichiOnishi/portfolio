@@ -86,6 +86,12 @@
         grid-template-columns: 1fr;
         gap: var(--spacing-xl);
     }
+    
+    .works-grid {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /* Mobile Devices (576px to 767px) */
@@ -179,6 +185,8 @@
     
     .works-grid {
         grid-template-columns: 1fr;
+        max-width: 90%;
+        margin: 0 auto;
     }
     
     .award-card {
